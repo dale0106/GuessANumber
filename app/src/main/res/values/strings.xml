@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Guess A Number</string>
+    <string name="author">Cris Dalessio (dale0106)</string>
+    <string name="action_about">About Page</string>
+</resources>

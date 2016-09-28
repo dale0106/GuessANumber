@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.algonquincollege.dale0106.guessanumber.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your best guess:"
+        android:textSize="24sp"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="60dp"
+        android:id="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:hint="1-1000"
+        android:inputType="number" />
+
+    <Button
+        android:text="check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="45dp"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <Button
+        android:text="Restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignEnd="@+id/editText"
+        android:background="@android:color/holo_orange_light"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="295dp"
+            app2:srcCompat="@mipmap/harambe"
+            android:id="@+id/imageView4"
+            android:scaleType="fitCenter" />
+    </FrameLayout>
+
+</RelativeLayout>
